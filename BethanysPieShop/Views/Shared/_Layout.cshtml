@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <link href="~/content/site.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg" role="navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarNav">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a>@await Component.InvokeAsync("CategoryMenu")</a>
+                </li>
+                <li class="nav-item contact-nav-item">
+                    <a asp-controller="Contact" asp-action="Index">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a>@await Component.InvokeAsync("ShoppingCartSummary")</a>
+                </li>
+                <li class="nav-item">
+                    <partial name="_LoginPartial" />
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-div">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="lead">
+                    <img class="img-responsive" alt="Bethany's Pie Shop" src="~/Images/bethanylogo.png" />
+                </p>
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

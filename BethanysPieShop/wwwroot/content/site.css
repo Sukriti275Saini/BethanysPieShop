@@ -1,0 +1,165 @@
+﻿body {
+    background-image: url('/images/pattern.png');
+    background-repeat: repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.main-div{
+    padding-top: 30px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.nav-item a{
+    padding: 0 15px;
+}
+.login-nav a{
+    padding: 0 25px;
+}
+
+.contact-nav-item{
+    padding-left: 25px;
+}
+
+.navbar-icons{
+    padding-left: 20px;
+}
+
+.carousel-item img{
+    min-height: 399px;
+    max-height: 400px;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 140px;
+    overflow: hidden;
+    padding: 3px 10px 0 10px;
+}
+
+.caption h3 a{
+    font-size: 28px;
+}
+.caption h3{
+    font-size: 23px;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.addToCart {
+    text-align: end;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar {
+    background-image: none;
+}
+
+.navbar-inverse {
+    background-color: #a593c2;
+    border-color: #a593c2;
+  
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+    font-size: 1.2em;
+
+}
+
+.navbar .nav > li > a {
+    font-size: 1.2em;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color:  white;
+}
+
+.carousel .item {
+    height: 400px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #23CFA7 !important;
+    border-color: black !important;
+    color: black;
+}
+
+.btn
+{
+    background-color: rgba(202, 0, 0, 0.65) !important;
+    border-color: rgb(202, 0, 0) !important;
+}
+
+ul.dropdown-menu.show{
+    padding: 0;
+    box-shadow: 1px 1px 4px #a593c2;
+    border: #a593c2;
+}
+.dropdown-menu li {
+    padding: 10px 0;
+    box-shadow: 0px 0px 4px #a593c2;
+}
+.dropdown-menu li a{
+    padding: 10px;
+    color: black;
+}
+.dropdown-menu li:hover {
+    box-shadow: none;
+}
+.dropdown-menu li a:hover {
+    color: #a593c2;
+}
+.dropdown-divider{
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+#logout {
+    padding: 3px 15px;
+    background-color: #23CFA7 !important;
+    border-color: black !important;
+    color: black;
+}
+#logout:hover {
+    background-color: rgba(202, 0, 0, 0.65) !important;
+    color: white;
+}
